@@ -1,0 +1,20 @@
+import kotlin.Boolean;
+
+CREATE TABLE ProductDetails (
+    id INTEGER NOT NULL PRIMARY KEY,
+    image TEXT,
+    title TEXT,
+    desc TEXT
+);
+
+
+insert:
+    INSERT INTO ProductDetails(id, image, title, desc)
+    VALUES(?, ?, ?, ?);
+
+getProductDetails:
+SELECT * FROM ProductDetails;
+
+delete:
+DELETE FROM ProductDetails
+WHERE id = id;
